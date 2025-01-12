@@ -1,0 +1,131 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c;  //Declaring variables
+	int sum;
+	cout << "Enter 3 digits: " << endl;
+	cin >> a >> b >> c;
+	sum = a + b + c;
+	cout << "The sum of the digits is: " << sum << endl;
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+	int n; //Declaring variable
+	cout << "Enter a number to print it in english lowercase letters: " << endl;
+	cin >> n;
+	if (n == 1) {
+		cout << "one" << endl;
+	}
+	else if (n == 2) {
+		cout << "two" << endl;
+	}
+	else if (n == 3) {
+		cout << "three" << endl;
+	}
+	else if (n == 4) {
+		cout << "four" << endl;
+	}
+	else if (n == 5) {
+		cout << "five" << endl;
+	}
+	else if (n == 6) {
+		cout << "six" << endl;
+	}
+	else if (n == 7) {
+		cout << "seven" << endl;
+	}
+	else if (n == 8) {
+		cout << "eight" << endl;
+	}
+	else if (n == 9) {
+		cout << "nine" << endl;
+	}
+	else {
+		cout << "Greater than nine." << endl;
+	}
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+	int n; //Declaring variable
+	cout << "Enter a number to print it in english lowercase letters: " << endl;
+	cin >> n;
+	if (n == 1) {
+		cout << "one" << endl;
+	}
+	else if (n == 2) {
+		cout << "two" << endl;
+	}
+	else if (n == 3) {
+		cout << "three" << endl;
+	}
+	else if (n == 4) {
+		cout << "four" << endl;
+	}
+	else if (n == 5) {
+		cout << "five" << endl;
+	}
+	else if (n == 6) {
+		cout << "six" << endl;
+	}
+	else if (n == 7) {
+		cout << "seven" << endl;
+	}
+	else if (n == 8) {
+		cout << "eight" << endl;
+	}
+	else if (n == 9) {
+		cout << "nine" << endl;
+	}
+	else {
+		cout << "Greater than nine." << endl;
+	}
+	if (n % 2 == 0) {
+		cout << "It is an even number." << endl;
+	}
+	else {
+		cout << "It is an odd number." << endl;
+	}
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int sumOfNumbers(int a, int b, int c, int d) {
+	int sum = 0;
+	sum += a;  
+	sum += b;
+	sum += c;
+	sum += d;
+	return sum;
+}
+
+
+int main() {
+	int p, q, r, s;
+	cout << "Enter 4 numbers: " << endl;
+	cin >> p >> q >> r >> s;
+	int maximum = p;
+	int minimum = p;
+	int sum1 = sumOfNumbers(p, q, r, s); 
+	cout << "The sum of the numbers is: " << sum1 << endl;
+	if (p > maximum) maximum = p;
+	if (q > maximum) maximum = q;
+	if (r > maximum) maximum = r;
+	if (s > maximum) maximum = s;
+
+	if (p < minimum) minimum = p;
+	if (q < minimum) minimum = q;
+	if (r < minimum) minimum = r;
+	if (s < minimum) minimum = s;
+
+	cout << "The maximum value is: " << maximum << endl;
+	cout << "The minimum value is  " << minimum << endl;
+	return 0;
+}
